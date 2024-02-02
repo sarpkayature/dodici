@@ -1,6 +1,5 @@
 node_modules
 .wireit
-.eslintrc
 dist
 docs
 .wireit

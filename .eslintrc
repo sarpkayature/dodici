@@ -1,0 +1,19 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint", "eslint-plugin-tsdoc", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "warn",
+    "tsdoc/syntax": "warn",
+    "prettier/prettier": "error"
+  }
+}

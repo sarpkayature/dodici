@@ -1,9 +1,6 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": {
-      "*": ["./src/*"],
-    },
     "experimentalDecorators": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -17,5 +14,8 @@
     "moduleResolution": "Bundler",
     "module": "ESNext",
     "noEmit": true,
+    "paths": {
+      "*": ["./src/*"],
+    },
   },
 }
