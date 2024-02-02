@@ -1,0 +1,23 @@
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+# Matches multiple files with brace expansion notation
+# Set indent_size to 4 for TypeScript and JavaScript files
+[*.{ts,tsx,js,jsx}]
+indent_size = 4
+
+# Markdown files
+[*.md]
+trim_trailing_whitespace = false
+
+# JSON files
+[*.json]
+indent_size = 2

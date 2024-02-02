@@ -1,0 +1,23 @@
+name: CI
+on:
+  push:
+    branches:
+      - '**'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read .nvmrc
+        run: echo ::set-output name=NVMRC::$(cat .nvmrc)
+        id: nvm
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '${{ steps.nvm.outputs.NVMRC }}'
+          cache: 'pnpm'
+
+      - run: pnpm install --no-frozen-lockfile
+      - run: pnpm run lint && pnpm run build
