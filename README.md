@@ -9,7 +9,7 @@
 <h4 align="center">A comprehensive TypeScript utility library providing a wide range of commonly used types and utilities to enhance development efficiency and code quality for
 <a href="https://www.typescriptlang.org/" target="_blank">Typescript projects</a>.</h4>
 
-<p>
+<p align="center">
   <a href="http://www.typescriptlang.org" target="_blank">
   <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="typescript"/> 
   </a>
