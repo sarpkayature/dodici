@@ -1,5 +1,0 @@
----
-"dodici": major
----
-
-First release
