@@ -1,6 +1,6 @@
 {
   "name": "dodici",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A comprehensive TypeScript utility library providing a wide range of commonly used types and utilities to enhance development efficiency and code quality for typescript projects.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
