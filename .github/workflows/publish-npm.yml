@@ -29,7 +29,7 @@ jobs:
           node-version: '${{ steps.nvm.outputs.NVMRC }}'
           cache: 'pnpm'
 
-      - run: pnpm install --frozen-lockfile
+      - run: pnpm install
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
